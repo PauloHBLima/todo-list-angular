@@ -1,40 +1,32 @@
 <section class="tasks">
     <article class="tasks__list">
         <ul>
-            <li>
+            <li *ngFor="let task of tasks">
                 <div>
-                    <input type="checkbox">
-                    <input type="text" value="Estudar Angular">
+                    <input type="checkbox"
+                    [(ngModel)]="task.checked"
+                    (click)="handleCheckInput(task)" >
+                    <input type="text"
+                    [(ngModel)]="task.name"
+                    [ngClass]="{checked: task.checked}"
+                    (keyup)="validateInputTask(task)"
+                    >
                 </div>
 
-                <button  type="button" aria-label="excluir">
-                    <span class="material-symbols-rounded"
-                    aria-hidden="true">
+                <button  type="button" aria-label="excluir" (click)="deleteTask(task.id)">
+                    <span class="material-symbols-rounded" aria-hidden="true">
                         {{icon}}
                         </span>
                 </button>
             </li>
-
-            <li>
-                <div>
-                    <input type="checkbox" checked>
-                    <input type="text" class="checked" value="Estudar Angular">
-                </div>
-
-                <button  type="button" aria-label="excluir">
-                    <span class="material-symbols-rounded"
-                    aria-hidden="true">
-                        {{icon}}
-                        </span>
-                </button>
-            </li>
-
         </ul>
     </article>
 
     <article class="tasks__add-new">
-        <form>
-            <input type="text" placeholder="Digite sua nova Task aqui...">
+        <form [formGroup]="taskForm" (ngSubmit)="createTask()">
+            <input type="text" placeholder="Digite sua nova Task aqui..."
+            formControlName="name"
+            >
         <button type="submit" aria-label="enviar">
             <span aria-hidden="true" class="material-symbols-rounded">send</span>
         </button>
@@ -43,6 +35,6 @@
 </section>
 
 <div class="btn__delete">
-    <app-button [text]="buttonSettings.text" [variant]="buttonSettings.variant"></app-button>
+    <app-button [text]="buttonSettings.text" [variant]="buttonSettings.variant" (onClick)="handleClickDeleteButton($event)"></app-button>
 </div>
 

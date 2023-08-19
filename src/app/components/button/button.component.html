@@ -1,1 +1,1 @@
-<button [ngClass]="variant">{{ text }}</button>
+<button [ngClass]="variant" (click)="emitEvent($event)">{{ text }}</button>

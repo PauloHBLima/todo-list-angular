@@ -1,9 +1,9 @@
 {
-    "tasks": [
-        {
-            "id": 1,
-            "name": "Estudar Typescript",
-            "checked": false
-        }
-    ]
+  "tasks": [
+    {
+      "name": "Estudar Javascript",
+      "checked": false,
+      "id": 1
+    }
+  ]
 }
