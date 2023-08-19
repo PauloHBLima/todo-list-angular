@@ -12,7 +12,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+button {
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
 .container {
     width: rem-calc(350);
     margin: 0 auto;
 }
+

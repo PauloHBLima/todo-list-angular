@@ -13,12 +13,6 @@
     min-height: rem-calc(250);
     position: relative;
 
-    button {
-        background: none;
-        cursor: pointer;
-        border: none;
-    }
-
     &__list {
         ul {
             list-style: none;
@@ -91,5 +85,13 @@
     }
     .checked {
         text-decoration: line-through;
+    }
+}
+
+.btn {
+    &__delete {
+        margin-top: rem-calc(40);
+        display: grid;
+        place-content: center;
     }
 }

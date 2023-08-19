@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ButtonVariants } from './types/buttonVariantes.type';
 
 @Component({
   selector: 'app-button',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
-
+    @Input() variant: ButtonVariants | null = null;
+    @Input()text: string = '';
 }

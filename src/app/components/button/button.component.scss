@@ -1,0 +1,30 @@
+@import '../../../scss/functions.scss';
+@import '../../../scss/variables.scss';
+
+button {
+    width: rem-calc(200);
+    padding: 1rem;
+    border-radius: rem-calc(50);
+
+    background-color: $primary;
+    color: $text-white;
+
+    &.danger {
+        background-color: $danger;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    &.warning {
+        background-color: $warning;
+        color: $text-black;
+    }
+
+    &.info {
+        background-color: $info;
+    }
+
+    &.secondary {
+        background-color: $secondary;
+    }
+}
