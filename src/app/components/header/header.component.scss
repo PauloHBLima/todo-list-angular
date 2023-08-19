@@ -1,0 +1,13 @@
+@import '../../../scss/functions.scss';
+@import '../../../scss/variables.scss';
+
+$header-bg-color: #525fe1;
+
+header {
+    background-color: $header-bg-color;
+    color: $text-white;
+    font-size: rem-calc(18);
+    padding: rem-calc(10);
+    text-align: center;
+    margin-top: rem-calc(50);
+}

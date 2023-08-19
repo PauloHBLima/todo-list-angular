@@ -1,0 +1,95 @@
+@import '../../../scss/functions.scss';
+@import '../../../scss/variables.scss';
+
+.material-symbols-rounded {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.tasks {
+    background-color: white;
+    padding: rem-calc(20);
+    width: 100%;
+    margin-top: rem-calc(20);
+    min-height: rem-calc(250);
+    position: relative;
+
+    button {
+        background: none;
+        cursor: pointer;
+        border: none;
+    }
+
+    &__list {
+        ul {
+            list-style: none;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: rem-calc(8);
+
+                    input {
+                        color: #939cbd;
+                        font-weight: 400;
+                    }
+
+                    input[type="text"] {
+                        border: none;
+                        padding: rem-calc(4);
+                        outline: none;
+
+                        &:focus {
+                            border-bottom: rem-calc(2) solid #525fe1;
+                        }
+                    }
+
+                }
+
+                button {
+                    color: #929cbd;
+                }
+            }
+
+
+        }
+    }
+
+    &__add-new {
+        position: absolute;
+        width: 80%;
+        left: rem-calc(35);
+        bottom: rem-calc(-15);
+
+        form {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ffa418;
+            padding: rem-calc(5);
+        }
+
+        input {
+            background: none;
+            border: none;
+            color: black;
+            padding: rem-calc(2);
+            outline: none;
+
+            &::placeholder {
+                color: inherit;
+            }
+
+            &:focus {
+                border-bottom: rem-calc(2) solid black;
+            }
+        }
+    }
+    .checked {
+        text-decoration: line-through;
+    }
+}

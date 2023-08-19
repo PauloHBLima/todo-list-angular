@@ -1,0 +1,44 @@
+<section class="tasks">
+    <article class="tasks__list">
+        <ul>
+            <li>
+                <div>
+                    <input type="checkbox">
+                    <input type="text" value="Estudar Angular">
+                </div>
+
+                <button  type="button" aria-label="excluir">
+                    <span class="material-symbols-rounded"
+                    aria-hidden="true">
+                        {{icon}}
+                        </span>
+                </button>
+            </li>
+
+            <li>
+                <div>
+                    <input type="checkbox" checked>
+                    <input type="text" class="checked" value="Estudar Angular">
+                </div>
+
+                <button  type="button" aria-label="excluir">
+                    <span class="material-symbols-rounded"
+                    aria-hidden="true">
+                        {{icon}}
+                        </span>
+                </button>
+            </li>
+
+        </ul>
+    </article>
+
+    <article class="tasks__add-new">
+        <form>
+            <input type="text" placeholder="Digite sua nova Task aqui...">
+        <button type="submit" aria-label="enviar">
+            <span aria-hidden="true" class="material-symbols-rounded">send</span>
+        </button>
+        </form>
+    </article>
+</section>
+
