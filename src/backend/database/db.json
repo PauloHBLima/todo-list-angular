@@ -1,9 +1,34 @@
 {
   "tasks": [
     {
-      "name": "Estudar Javascript",
-      "checked": false,
+      "name": "Estudar Typescript",
+      "checked": true,
       "id": 1
+    },
+    {
+      "name": "Estudar Javascript",
+      "checked": true,
+      "id": 2
+    },
+    {
+      "name": "Estudar Angular",
+      "checked": true,
+      "id": 3
+    },
+    {
+      "name": "Estudar POO",
+      "checked": true,
+      "id": 4
+    },
+    {
+      "name": "Estudar SCSS - BEM",
+      "checked": false,
+      "id": 5
+    },
+    {
+      "name": "exemplo",
+      "checked": false,
+      "id": 6
     }
   ]
 }
